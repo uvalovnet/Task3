@@ -13,7 +13,6 @@ namespace Task3
         private readonly string outputFile;
         private readonly string problemsFile;
 
-        // Конструктор класса
         public LogStandardizer(string inputFile, string outputFile, string problemsFile)
         {
             this.inputFile = inputFile ?? throw new ArgumentNullException(nameof(inputFile));
@@ -112,7 +111,7 @@ namespace Task3
             if (date.Contains("-"))
             {
                 var parts = date.Split('-');
-                return $"{parts[2]}-{parts[1]}-{parts[0]}"; // DD-MM-YYYY
+                return $"{parts[2]}-{parts[1]}-{parts[0]}";
             }
 
             return date;
